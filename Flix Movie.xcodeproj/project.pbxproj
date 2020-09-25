@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -58,7 +58,6 @@
 				7D06BC5EDFE49AD980A77F44 /* Pods-Flix Movie.debug.xcconfig */,
 				12308781B15B6A07AF522B2B /* Pods-Flix Movie.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -359,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6H8CMRP5X;
 				INFOPLIST_FILE = "Flix Movie/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -377,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6H8CMRP5X;
 				INFOPLIST_FILE = "Flix Movie/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
