@@ -22,7 +22,6 @@ class MovieViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let baseUrl = "https://image.tmdb.org/t/p/w185"
         let posterPath = movieDict[indexPath.row]["poster_path"] as! String
         let posterUrl = URL(string: baseUrl+posterPath)
-        print(posterUrl)
         cell.poster.af.setImage(withURL: posterUrl!)
         
         return cell
@@ -61,14 +60,24 @@ class MovieViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        let cell = sender as! UITableViewCell
+        let indexPath = movieTableView.indexPath(for: cell)!
+        let movie = movieDict[indexPath.row]
+        
+        let segueVC = segue.destination as! MovieDetailsViewController
+        segueVC.movie = movie
+        
+        movieTableView.deselectRow(at: indexPath, animated: true)
+        
+        
     }
-    */
+
 
 }
